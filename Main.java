@@ -1,5 +1,5 @@
 package cryptography;
-import java.util.Arrays;
+import javax.crypto.KeyGenerator;
 public class Main 
 {
     //entry point into the application
@@ -9,7 +9,7 @@ public class Main
         String key = "How old is my computer?";
         KeyGenerator kGen = new KeyGenerator(key);
         String nK = kGen.getNumericKey();
-        
+                            
         ArmstrongManager aMgr = new ArmstrongManager(nK);
         ColorManager cMgr = new ColorManager(nK);
         
